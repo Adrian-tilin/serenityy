@@ -1,0 +1,11 @@
+<script>start("c:\\Users\\adria\\OneDrive\\Escritorio\\serenity4\\juegodepreguntas\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("final.html","final.html",0,1431,"1.4 kB",1746204808,"5/2/25, 11:53:28 AM");</script>
+<script>addRow("final.js","final.js",0,995,"995 B",1746205098,"5/2/25, 11:58:18 AM");</script>
+<script>addRow("index.html","index.html",0,1057,"1.0 kB",1746206061,"5/2/25, 12:14:21 PM");</script>
+<script>addRow("juego-preguntas.css","juego-preguntas.css",0,4568,"4.5 kB",1746203797,"5/2/25, 11:36:37 AM");</script>
+<script>addRow("juego-preguntas.js","juego-preguntas.js",0,557,"557 B",1746205099,"5/2/25, 11:58:19 AM");</script>
+<script>addRow("juego.html","juego.html",0,1632,"1.6 kB",1746204592,"5/2/25, 11:49:52 AM");</script>
+<script>addRow("juego.js","juego.js",0,12916,"12.6 kB",1746204945,"5/2/25, 11:55:45 AM");</script>
+<script>addRow("menu.html","menu.html",0,1955,"1.9 kB",1746205472,"5/2/25, 12:04:32 PM");</script>
+<script>addRow("menu.js","menu.js",0,2279,"2.2 kB",1746204808,"5/2/25, 11:53:28 AM");</script>

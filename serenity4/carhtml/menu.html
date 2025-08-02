@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Quiz</title>
+  <link rel="stylesheet" href="/carcss/juego-preguntas.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="/galeria/IMAGEN1-removebg-preview.png" alt="" class="img" />
+
+    <header>
+      <div class="puntaje">
+        <img src="/galeria/klipartz.com.png" alt="" />
+        <span class="puntos" id="puntos">0</span>
+      </div>
+      <h1>QUIZ</h1>
+      <div class="jugador">
+        <span class="nombre" id="nombre">Martín</span>
+        <img src="/galeria/user.png" alt="" />
+        <button id="btn-salir" class="btn-salir">Salir</button>
+      </div>
+    </header>
+
+    <main class="menu">
+      <h2>Hola <span id="nombre-jugador">Martín</span></h2>
+      <p>Elige un nivel</p>
+      <div class="categorias">
+        <div class="categoria" id="general">
+          <img src="/galeria/nivel_facil-removebg-preview.png" alt="" class="foto-categoria" />
+          <h3>Fácil</h3>
+        </div>
+        <div class="categoria" id="musica">
+          <img src="/galeria/nivel_medio-removebg-preview.png" alt="" class="foto-categoria" />
+          <h3>Medio</h3>
+        </div>
+        <div class="categoria" id="peliculas">
+          <img src="/galeria/dificil-removebg-preview.png" alt="" class="foto-categoria" />
+          <h3>Difícil</h3>
+        </div>
+        <div class="categoria desabilitada no-events">
+          <img src="img/juegos.png" alt="" class="foto-categoria" />
+          <h3>Próximamente...</h3>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/carjavascripts/menu.js"></script>
+</body>
+</html>

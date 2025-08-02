@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 50px;
+    color: #949dc8;
+    margin: 30px 0;
+  }
+  
+  .equipo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 50px;
+  }
+  
+  .miembro {
+    text-align: center;
+    width: 25%;
+  }
+  
+  .imagen-ovalo {
+    height: 55vh;
+    width: 100%;
+    border: 20px solid #949dc8;
+    border-radius: 70%;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .imagen-ovalo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70%;
+  }
+  
+  .nombre {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  

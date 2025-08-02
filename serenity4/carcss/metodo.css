@@ -1,0 +1,15 @@
+cuadrado{
+    height: 60vh;
+    width: 50%;
+    border: 20px solid #949dc8;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 25% ;
+    text-align: justify;
+    font-size: 28px;
+}
+.titulo{
+ text-align: center;
+ font-size: 50px;
+ color: #949dc8;
+}

@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d3d6de;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background: #949dc8;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
+.header-item {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header-item div {
+  margin-left: 5px;
+}
+
+.img-header {
+  width: 30px;
+  height: 30px;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+}
+
+.header-profile div {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+#exit-button {
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #949dc8;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas esto lo hice para que se vea bonito */
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  background-color: transparent;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-color: #949dc8; /*  igual que el header  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.card-back img,
+.card-front img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+#reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+}

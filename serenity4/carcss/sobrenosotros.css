@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&family=Roboto:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+/*  PC más pequeñas (1024px a 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  body {
+    font-size: 15px;
+    background-color: #f0f0f0;
+  }
+}
+
+/*  Tablet (768px a 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  body {
+    font-size: 14px;
+    background-color: #e0e0e0;
+  }
+}
+
+/*  Phablet (600px a 767px) */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  body {
+    font-size: 13px;
+    background-color: #d0d0d0;
+  }
+}
+
+/* Celular (400px a 599px) */
+@media screen and (max-width: 599px) and (min-width: 400px) {
+  body {
+    font-size: 12px;
+    background-color: #c0c0c0;
+  }
+}
+
+/*  Celular pequeño (menos de 400px) */
+@media screen and (max-width: 399px) {
+  body {
+    font-size: 11px;
+    background-color: #b0b0b0;
+  }
+}
+
+nav {
+  width: 100%;
+  background-color: transparent;
+}
+
+.containerNav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.contentNavbar {
+  display: flex;
+  gap: 10px;
+  font-family: 'Times New Roman', serif;
+  font-size: 2rem;
+  color: #2c2641;
+  letter-spacing: 3px;
+}
+
+#btnNav {
+  background-color: white;
+  border: none;
+  color: #2c2641;
+  font-size: 1.5rem;
+}
+
+.TarjetaPrincipal {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #929dcb;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.TituloTarjeta {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.TextoTarjetaP {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.img1,
+.img2 {
+  position: absolute;
+  width: 300px;
+  z-index: 10;
+}
+
+.img1 {
+    top: 5%;
+    left: 2%;
+    transform: rotate(95deg);
+}
+
+.img2 {
+     top: 10%;
+    left: 83%;
+}
+
+.ContainerGeneral {
+  display: flex;
+  margin-top: 27%;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.columna {
+  width: 50%;
+  padding: 0 1%;
+}
+
+.tarjeta1,
+.tarjeta2 {
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.tarjeta1 {
+  background-color: #929dcb;
+}
+
+.tarjeta2 {
+  background-color: #c3a6e6;
+}
+
+.TextoTarjeta {
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.containerBtn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+#btndelfinal {
+  background: linear-gradient(120deg, #dfe0e0, #f9f9f9);
+  border: 1px solid #dfe0e0;
+  color: #2c2641;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 12rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .img1,
+  .img2 {
+    width: 150px;
+  }
+  .TarjetaPrincipal {
+    top: 100px;
+  }
+  .TituloTarjeta {
+    font-size: 2rem;
+  }
+  .TextoTarjeta,
+  .TextoTarjetaP {
+    font-size: 1.2rem;
+  }
+  .columna {
+    width: 100%;
+  }
+}
