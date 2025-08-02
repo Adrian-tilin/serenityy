@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+.titulo {
+  text-align: center;
+  font-size: 50px;
+  color: #949dc8;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
+.cuadrado {
+  height: auto;
+  width: 50%;
+  border: 20px solid #949dc8;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+  text-align: justify;
+  font-size: 28px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+/*  PC grandes */
+@media screen and (min-width: 1201px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* PC más pequeñas (1024px a 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  body {
+    font-size: 15px;
+    background-color: #f0f0f0;
+  }
+
+  .cuadrado {
+    width: 60%;
+    font-size: 26px;
+  }
+}
+
+/* Tablet (768px a 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  body {
+    font-size: 14px;
+    background-color: #e0e0e0;
+  }
+
+  .cuadrado {
+    width: 70%;
+    font-size: 24px;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+}
+
+/* Phablet (600px a 767px) */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  body {
+    font-size: 13px;
+    background-color: #d0d0d0;
+  }
+
+  .cuadrado {
+    width: 80%;
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 36px;
+  }
+}
+
+/* Celulares (400px a 599px) */
+@media screen and (max-width: 599px) and (min-width: 400px) {
+  body {
+    font-size: 12px;
+    background-color: #c0c0c0;
+  }
+
+  .cuadrado {
+    width: 85%;
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+}
+
+/* Celulares pequeños (< 400px) */
+@media screen and (max-width: 399px) {
+  body {
+    font-size: 11px;
+    background-color: #b0b0b0;
+  }
+
+  .cuadrado {
+    width: 90%;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+}

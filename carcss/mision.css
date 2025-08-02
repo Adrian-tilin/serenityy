@@ -1,0 +1,90 @@
+body {
+  font-size: 16px;
+  background-color: #faf9f8;
+  margin: 0;
+  padding: 0;
+}
+
+.cuadrado {
+  border: 20px solid #949dc8;
+  text-align: justify;
+  font-size: 1.6rem;
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  background-color: white;
+}
+
+.titulo {
+  font-size: 3rem;
+  color: #949dc8;
+  margin-bottom: 30px;
+}
+
+/* PC más pequeñas */
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  body {
+    font-size: 15px;
+    background-color: #faf9f8;
+  }
+  .cuadrado {
+    font-size: 1.5rem;
+  }
+}
+
+/*  Tablet */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  body {
+    font-size: 14px;
+    background-color: #faf9f8;
+  }
+  .cuadrado {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+}
+
+/*  Tablet pequeña / Phablet */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  body {
+    font-size: 13px;
+    background-color: #faf9f8;
+  }
+  .cuadrado {
+    font-size: 1.3rem;
+    padding: 15px;
+    margin: 20px;
+  }
+}
+
+/*  Celular */
+@media screen and (max-width: 599px) and (min-width: 400px) {
+  body {
+    font-size: 12px;
+    background-color: #faf9f8;
+  }
+  .cuadrado {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 15px;
+  }
+  .titulo {
+    font-size: 2.2rem;
+  }
+}
+
+/*  Celular pequeño */
+@media screen and (max-width: 399px) {
+  body {
+    font-size: 11px;
+    background-color: #faf9f8;
+  }
+  .cuadrado {
+    font-size: 1.1rem;
+    padding: 8px;
+    margin: 10px;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+}

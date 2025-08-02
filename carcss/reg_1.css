@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  Estilo base (PC grandes) */
+html, body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-image: url("/galeria/WhatsApp%20Image%202024-11-05%20at%202.55.34%20PM.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+
+.logo {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.logo header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-family: "Abril Fatface", serif;
+}
+
+.logo header img {
+  width: 50px;
+}
+
+.logo .img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo .img img {
+  max-width: 70%;
+  height: auto;
+}
+
+.login {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(148, 157, 200, 0.9);
+  padding: 20px;
+  text-align: center;
+}
+
+.login header h1 {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form form {
+  background-color: #FAF9F8;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.crear-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FAF9F8;
+  color: #000;
+  border-radius: 30px;
+  border: 2px solid #949DC8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.crear-btn:hover {
+  background-color: #d8d8e8;
+}
+
+
+.login footer p {
+  font-size: 0.9em;
+  color: #fff;
+  padding: 20px;
+}
+
+
+/* PC más pequeñas (1024px a 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  body {
+    font-size: 15px;
+    background-color: #f0f0f0;
+  }
+}
+
+/*  Tablet (768px a 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  body {
+    font-size: 14px;
+    background-color: #e0e0e0;
+  }
+
+  .login header h1 {
+    font-size: 1.8em;
+  }
+
+  .logo .img img {
+    max-width: 65%;
+  }
+}
+
+/*  Tablet pequeña / Phablet (600px a 767px) */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  body {
+    font-size: 13px;
+    background-color: #d0d0d0;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .logo, .login {
+    flex: 1 1 100%;
+  }
+}
+
+/*  Celular (400px a 599px) */
+@media screen and (max-width: 599px) and (min-width: 400px) {
+  body {
+    font-size: 12px;
+    background-color: #c0c0c0;
+  }
+
+  .logo header h1 {
+    font-size: 1.2em;
+  }
+
+  .login header h1 {
+    font-size: 1.6em;
+  }
+
+  .crear-btn {
+    width: 100%;
+  }
+}
+
+/*  Celular pequeño (menos de 400px) */
+@media screen and (max-width: 399px) {
+  body {
+    font-size: 11px;
+    background-color: #b0b0b0;
+  }
+
+  .login header h1 {
+    font-size: 1.4em;
+  }
+
+  .logo .img img {
+    max-width: 80%;
+  }
+}

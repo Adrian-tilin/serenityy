@@ -1,0 +1,126 @@
+:root {
+  --color-primary: #cdc1dd;
+  --color-secondary: #cebece;
+  --color-primary-shadow: #c0aadd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #949dc8;
+}
+
+/* Menú superior */
+.menu-superior {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+  background-color: #f0e6ff;
+  padding: 15px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow-x: auto;
+}
+
+.menu-superior button {
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 #bfbfbf;
+  cursor: pointer;
+  font-weight: bold;
+  width: 85px;
+  height: 85px;
+  min-width: 85px;
+  flex-shrink: 0;
+}
+
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Imagen sirena */
+.sirena-container {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sirena {
+  width: 100%;
+  max-width: 400px;
+  transform: rotate(75deg); 
+  transition: transform 0.3s ease;
+}
+
+
+#app.contenedor-botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+#app.contenedor-botones button {
+  position: relative;
+  height: 65px;
+  width: 73px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-secondary);
+  box-shadow: 0px 8px 0 0 #bfbfbf;
+  cursor: pointer;
+}
+
+
+#app button.done {
+  background-color: var(--color-primary);
+  box-shadow: 0px 8px 0 0 var(--color-primary-shadow);
+  transition: 0.3s;
+}
+#app button.done .icon path {
+  fill: white;
+}
+#app button:active {
+  box-shadow: none;
+  top: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sirena {
+    max-width: 300px;
+    transform: rotate(75deg);
+  }
+
+  .menu-superior {
+    gap: 15px; 
+  }
+
+  .menu-superior button {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+  }
+}
